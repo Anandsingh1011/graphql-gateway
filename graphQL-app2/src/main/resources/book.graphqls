@@ -1,0 +1,16 @@
+type Book {
+	id: ID!
+	name: String!
+	isbn: String!
+}
+
+# Root
+type Query {
+	findAllBooks: [Book]!
+	countBooks: Long!
+}
+
+# Root
+type Mutation {
+	createBook(name: String!, isbn: String!): Book!
+}

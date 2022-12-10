@@ -1,0 +1,17 @@
+type Publisher {
+	id: ID!
+	title: String!
+	description: String
+	book: Book
+}
+
+extend type Query {
+	findAllPublishers: [Publisher]!
+	countPublishers: Long!
+}
+
+extend type Mutation {
+	createPublisher(title: String!, description: String, book: ID!): Publisher!
+	# updatePublisher(id: ID!, title: String, description: String): Publisher!
+	# deletePublisher(id: ID!): Boolean
+}

@@ -1,0 +1,9 @@
+server:
+ port: 8082
+ servlet:
+  contextPath: /app2
+spring:
+  data:
+    mongodb:
+      database: twc_mongodb
+      port: 27017
