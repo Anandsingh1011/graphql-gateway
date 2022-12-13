@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.twc</groupId>
+    <artifactId>graphQL-main-gateway-using-braid</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>graphql</name>
+    <description>Demo project graphQL-main-gateway-using-braid </description>
+
+    <properties>
+        <java.version>11</java.version>
+        <kotlin.version>1.3.10</kotlin.version>
+    </properties>
+    <!-- <repositories>
+        <repository>
+            <id>Atassian</id>
+            <name>Atlassian</name>
+            <url>http://packages.atlassian.com/maven/public</url>
+        </repository>
+        <repository>
+            <id>Atassian Snapshot</id>
+            <name>Atlassian Snapshot</name>
+            <url>http://packages.atlassian.com/maven/public-snapshot</url>
+        </repository>
+    </repositories> -->
+    
+     <repositories>
+        <repository>
+            <id>Atassian</id>
+            <name>Atlassian</name>
+            <url>https://packages.atlassian.com/content/repositories/atlassian-public/</url>
+        </repository>
+        <repository>
+            <id>Atassian Snapshot</id>
+            <name>Atlassian Snapshot</name>
+            <url>http://packages.atlassian.com/maven/public-snapshot</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+         <dependency>
+                <groupId>com.atlassian.braid</groupId>
+                <artifactId>graphql-braid</artifactId>
+                <version>0.23.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>3.11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.5</version>
+            </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.31</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

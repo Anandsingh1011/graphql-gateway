@@ -13,7 +13,7 @@
 	<modules>
 		<module>graphql-app1</module>
 		<module>graphql-app2</module>
-		<module>graphQL-main-gateway</module>
+		<module>graphQL-main-gateway-using-braid</module>
 
 	</modules>
 
